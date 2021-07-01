@@ -126,7 +126,7 @@ if __name__ == "__main__":
         yolo_losses.append(YOLOLoss(np.reshape(anchors, [-1, 2]), num_classes, \
                                     (input_shape[1], input_shape[0]), smoooth_label, Cuda, normalize))
 
-    annotation_path = './trainlist_20000.txt'
+    annotation_path = 'logs/trainlist_20000.txt'
     val_split = 0.1
     with open(annotation_path) as f:
         lines = f.readlines()
